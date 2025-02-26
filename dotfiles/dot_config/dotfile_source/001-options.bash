@@ -24,7 +24,7 @@ export HISTTIMEFORMAT="[%F %T] "
 # Lots o' history.
 export HISTSIZE=10000
 export HISTFILESIZE=10000
-export HISTFILE={{ .xdgStateDir }}/bash/history
+export HISTFILE="${XDG_STATE_HOME}"/bash/history
 
 # Avoid duplicate entries
 HISTCONTROL="erasedups:ignoreboth"
