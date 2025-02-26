@@ -56,6 +56,7 @@ UV_PATH="$(_uvBinaryPath_)" || {
 if [[ -n ${UV_PATH} ]]; then
     # Install the packages with uv
     for package in "${packages[@]}"; do
+        echo "$UV_PATH tool install '$package'"
         ${UV_PATH} tool install "${package}"
     done
 fi
